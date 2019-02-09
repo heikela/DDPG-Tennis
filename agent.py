@@ -6,7 +6,7 @@ import actor
 import critic
 from ornstein_uhlenbeck_noise import *
 from replaybuffer import *
-from utils import soft_update
+from utils import soft_update, mutate_param
 import numpy as np
 
 class DdpgAgent():

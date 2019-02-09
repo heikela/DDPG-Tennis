@@ -1,3 +1,5 @@
+import numpy as np
+
 def soft_update(local_model, target_model, tau):
     """Soft update model parameters.
     target parameters = tau * local parameters + (1 - tau) * target parameters
