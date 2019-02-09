@@ -8,11 +8,13 @@ Attempt to solve a collaborative table tennis Unity environment with DDPG and po
 
 The solution depends on the following packages:
 
-numpy
-scipy
-pytorch (0.4.0)
-matplotlib
-jupyter
+- numpy
+- scipy
+- pytorch (0.4.0)
+- matplotlib
+- jupyter
+- pandas
+
 These can be installed with pip / conda.
 
 In practice I installed everything else from Anaconda navigator, and pytorch with
