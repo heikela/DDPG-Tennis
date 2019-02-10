@@ -72,7 +72,7 @@ class DdpgAgent():
         self.episode_return = 0
         self.episode = 1
     
-    def act(self, state):
+    def act(self, state, noise=True):
         """Select action based on state
         
         Determine the action preferred by the actor network and add exploratory noise.
@@ -82,7 +82,8 @@ class DdpgAgent():
             self.actor_network_local.eval()
             action = self.actor_network_local(state_tensor).cpu().data.numpy()
             self.actor_network_local.train()
-            action += self.noise.sample()
+            if noise:
+                action += self.noise.sample()
             return np.clip(action, -self.action_space_limit, self.action_space_limit)
     
     def step(self, state, action, reward, next_state, done):
@@ -225,7 +226,7 @@ class DdpgAgent():
         """Set agent state from a snapshot returned earlier by full_save_dict()"""
         self.load_state_dict(full_save_dict['state'])
         self.load_hyperparameter_dict(full_save_dict['hyperparameters'])
-        self.name = full_save_dict['name']
+        self.name = full_save_dict['agent_name']
         self.history = full_save_dict['history']
         self.episode_return = 0
         self.episode = len(self.history) + 1
