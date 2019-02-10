@@ -238,7 +238,19 @@ class DdpgAgent():
 def ddpg(agent, env, brain_name,
          max_episode=1000, max_t=1100,
          checkpoint_episodes=100):
-    """Carry out learning based on the DDPG algorithm."""
+    """Carry out learning based on the DDPG algorithm.
+
+    Params
+    ======
+        agent (DdpgAgent): The agent to train
+        env (Unity Env): The environment to train the agent in
+        brain_name (string): The name of the brain to use when communicating to the unity env.
+        max_episode (int): Stop training after the agent has undergone this many episodes of trianing,
+            including any present in the agent's history.
+        max_t (int): Maximum number of time steps to allow in each episode if the environment doesn't indicate
+            that the episode is done sooner than this.
+        checkpoint_episodes (int): after how many episodes we want to save a snapshot of the agent's state on disk
+    """
     for i_episode in range(len(agent.history) + 1, max_episode + 1):
         env_info = env.reset(train_mode=True)[brain_name] # reset the environment
         state = env_info.vector_observations[0]
@@ -260,7 +272,18 @@ def ddpg(agent, env, brain_name,
 def ddpg_collab(agents, env, brain_name,
          max_episode=1000, max_t=1100,
          checkpoint_episodes=100):
-    """Carry out learning based on the DDPG algorithm, for two agents collaborating."""
+    """Carry out learning based on the DDPG algorithm, for two agents collaborating.
+
+    Params
+    ======
+        agent (DdpgAgent): The agent to train
+        env (Unity Env): The environment to train the agent in
+        brain_name (string): The name of the brain to use when communicating to the unity env.
+        max_episode (int): Stop training after the agent has undergone this many episodes of trianing,
+            including any present in the agent's history.
+        max_t (int): Maximum number of time steps to allow in each episode if the environment doesn't indicate
+            that the episode is done sooner than this.
+        checkpoint_episodes (int): after how many episodes we want to save a snapshot of the agent's state on disk"""
     for i_episode in range(len(agents[0].history) + 1, max_episode + 1):
         env_info = env.reset(train_mode=True)[brain_name] # reset the environment
         states = env_info.vector_observations
