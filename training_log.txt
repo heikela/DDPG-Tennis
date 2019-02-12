@@ -2343,3 +2343,849 @@ Agent: agent-10, mean return: 0.41
 
 Agent: agent-15, mean return: 0.42
 Paired agent-8 with agent-12
+Episode 7400	Average Score: 0.61
+Episode 7400	Average Score: 0.61
+
+Agent: agent-8, mean return: 0.61
+
+Agent: agent-12, mean return: 0.61
+Paired agent-5 with agent-13
+Episode 7400	Average Score: 0.53
+Episode 7400	Average Score: 0.52
+
+Agent: agent-5, mean return: 0.53
+
+Agent: agent-13, mean return: 0.52
+Paired agent-4 with agent-0
+Episode 7400	Average Score: 0.40
+Episode 7400	Average Score: 0.39
+
+Agent: agent-4, mean return: 0.40
+
+Agent: agent-0, mean return: 0.39
+Overwriting agent-0 with agent-13, p = 0.02
+agent-2 performed worse than agent-13 but it wasn't significant, p = 0.09
+agent-4 performed worse than agent-11 but it wasn't significant, p = 0.76
+agent-6 performed worse than agent-8 but it wasn't significant, p = 0.21
+agent-7 performed worse than agent-13 but it wasn't significant, p = 0.09
+Overwriting agent-9 with agent-14, p = 0.03
+Overwriting agent-10 with agent-12, p = 0.00
+Overwriting agent-11 with agent-12, p = 0.00
+Paired agent-7 with agent-15
+Episode 7600	Average Score: 0.42
+Episode 7600	Average Score: 0.41
+
+Agent: agent-7, mean return: 0.42
+
+Agent: agent-15, mean return: 0.41
+Paired agent-6 with agent-1
+Episode 7600	Average Score: 0.49
+Episode 7600	Average Score: 0.48
+
+Agent: agent-6, mean return: 0.49
+
+Agent: agent-1, mean return: 0.48
+Paired agent-9 with agent-2
+Episode 7600	Average Score: 0.52
+Episode 7600	Average Score: 0.51
+
+Agent: agent-9, mean return: 0.52
+
+Agent: agent-2, mean return: 0.51
+Paired agent-4 with agent-0
+Episode 7600	Average Score: 0.51
+Episode 7600	Average Score: 0.50
+
+Agent: agent-4, mean return: 0.51
+
+Agent: agent-0, mean return: 0.50
+Paired agent-11 with agent-5
+Episode 7600	Average Score: 0.53
+Episode 7600	Average Score: 0.53
+
+Agent: agent-11, mean return: 0.53
+
+Agent: agent-5, mean return: 0.53
+Paired agent-8 with agent-12
+Episode 7600	Average Score: 0.43
+Episode 7600	Average Score: 0.43
+
+Agent: agent-8, mean return: 0.43
+
+Agent: agent-12, mean return: 0.43
+Paired agent-3 with agent-14
+Episode 7600	Average Score: 0.31
+Episode 7600	Average Score: 0.31
+
+Agent: agent-3, mean return: 0.31
+
+Agent: agent-14, mean return: 0.31
+Paired agent-10 with agent-13
+Episode 7600	Average Score: 0.58
+Episode 7600	Average Score: 0.59
+
+Agent: agent-10, mean return: 0.58
+
+Agent: agent-13, mean return: 0.59
+agent-0 performed worse than agent-10 but it wasn't significant, p = 0.25
+agent-2 performed worse than agent-10 but it wasn't significant, p = 0.29
+agent-3 performed worse than agent-7 but it wasn't significant, p = 0.06
+agent-8 performed worse than agent-2 but it wasn't significant, p = 0.18
+agent-12 performed worse than agent-11 but it wasn't significant, p = 0.10
+Overwriting agent-14 with agent-6, p = 0.00
+Overwriting agent-15 with agent-10, p = 0.01
+Paired agent-0 with agent-1
+Episode 7800	Average Score: 0.34
+Episode 7800	Average Score: 0.34
+
+Agent: agent-0, mean return: 0.34
+
+Agent: agent-1, mean return: 0.34
+Paired agent-4 with agent-13
+Episode 7800	Average Score: 0.68
+Episode 7800	Average Score: 0.66
+
+Agent: agent-4, mean return: 0.68
+
+Agent: agent-13, mean return: 0.66
+Paired agent-5 with agent-10
+Episode 7800	Average Score: 0.64
+Episode 7800	Average Score: 0.63
+
+Agent: agent-5, mean return: 0.64
+
+Agent: agent-10, mean return: 0.63
+Paired agent-2 with agent-14
+Episode 7800	Average Score: 0.27
+Episode 7800	Average Score: 0.28
+
+Agent: agent-2, mean return: 0.27
+
+Agent: agent-14, mean return: 0.28
+Paired agent-6 with agent-8
+Episode 7800	Average Score: 0.42
+Episode 7800	Average Score: 0.42
+
+Agent: agent-6, mean return: 0.42
+
+Agent: agent-8, mean return: 0.42
+Paired agent-3 with agent-11
+Episode 7800	Average Score: 0.43
+Episode 7800	Average Score: 0.43
+
+Agent: agent-3, mean return: 0.43
+
+Agent: agent-11, mean return: 0.43
+Paired agent-9 with agent-7
+Episode 7800	Average Score: 0.56
+Episode 7800	Average Score: 0.55
+
+Agent: agent-9, mean return: 0.56
+
+Agent: agent-7, mean return: 0.55
+Paired agent-12 with agent-15
+Episode 7800	Average Score: 0.41
+Episode 7800	Average Score: 0.41
+
+Agent: agent-12, mean return: 0.41
+
+Agent: agent-15, mean return: 0.41
+agent-0 performed worse than agent-11 but it wasn't significant, p = 0.14
+Overwriting agent-2 with agent-4, p = 0.00
+Overwriting agent-6 with agent-9, p = 0.02
+Overwriting agent-8 with agent-10, p = 0.00
+Overwriting agent-12 with agent-5, p = 0.00
+Overwriting agent-14 with agent-8, p = 0.01
+Paired agent-1 with agent-9
+Episode 8000	Average Score: 0.37
+Episode 8000	Average Score: 0.38
+
+Agent: agent-1, mean return: 0.37
+
+Agent: agent-9, mean return: 0.38
+Paired agent-15 with agent-8
+Episode 8000	Average Score: 0.55
+Episode 8000	Average Score: 0.55
+
+Agent: agent-15, mean return: 0.55
+
+Agent: agent-8, mean return: 0.55
+Paired agent-14 with agent-2
+Episode 8000	Average Score: 0.54
+Episode 8000	Average Score: 0.55
+
+Agent: agent-14, mean return: 0.54
+
+Agent: agent-2, mean return: 0.55
+Paired agent-10 with agent-5
+Episode 8000	Average Score: 0.60
+Episode 8000	Average Score: 0.61
+
+Agent: agent-10, mean return: 0.60
+
+Agent: agent-5, mean return: 0.61
+Paired agent-13 with agent-12
+Episode 8000	Average Score: 0.60
+Episode 8000	Average Score: 0.60
+
+Agent: agent-13, mean return: 0.60
+
+Agent: agent-12, mean return: 0.60
+Paired agent-6 with agent-3
+Episode 8000	Average Score: 0.38
+Episode 8000	Average Score: 0.38
+
+Agent: agent-6, mean return: 0.38
+
+Agent: agent-3, mean return: 0.38
+Paired agent-4 with agent-0
+Episode 8000	Average Score: 0.57
+Episode 8000	Average Score: 0.56
+
+Agent: agent-4, mean return: 0.57
+
+Agent: agent-0, mean return: 0.56
+Paired agent-7 with agent-11
+Episode 8000	Average Score: 0.43
+Episode 8000	Average Score: 0.42
+
+Agent: agent-7, mean return: 0.43
+
+Agent: agent-11, mean return: 0.42
+agent-0 performed worse than agent-13 but it wasn't significant, p = 0.55
+Overwriting agent-1 with agent-15, p = 0.00
+Overwriting agent-3 with agent-0, p = 0.00
+Overwriting agent-7 with agent-0, p = 0.04
+agent-8 performed worse than agent-12 but it wasn't significant, p = 0.47
+Overwriting agent-9 with agent-14, p = 0.00
+agent-13 performed worse than agent-12 but it wasn't significant, p = 0.99
+agent-14 performed worse than agent-2 but it wasn't significant, p = 0.96
+Paired agent-12 with agent-13
+Episode 8200	Average Score: 0.54
+Episode 8200	Average Score: 0.53
+
+Agent: agent-12, mean return: 0.54
+
+Agent: agent-13, mean return: 0.53
+Paired agent-10 with agent-4
+Episode 8200	Average Score: 0.65
+Episode 8200	Average Score: 0.64
+
+Agent: agent-10, mean return: 0.65
+
+Agent: agent-4, mean return: 0.64
+Paired agent-14 with agent-0
+Episode 8200	Average Score: 0.51
+Episode 8200	Average Score: 0.51
+
+Agent: agent-14, mean return: 0.51
+
+Agent: agent-0, mean return: 0.51
+Paired agent-8 with agent-1
+Episode 8200	Average Score: 0.52
+Episode 8200	Average Score: 0.53
+
+Agent: agent-8, mean return: 0.52
+
+Agent: agent-1, mean return: 0.53
+Paired agent-9 with agent-3
+Episode 8200	Average Score: 0.56
+Episode 8200	Average Score: 0.55
+
+Agent: agent-9, mean return: 0.56
+
+Agent: agent-3, mean return: 0.55
+Paired agent-7 with agent-15
+Episode 8200	Average Score: 0.53
+Episode 8200	Average Score: 0.53
+
+Agent: agent-7, mean return: 0.53
+
+Agent: agent-15, mean return: 0.53
+Paired agent-11 with agent-2
+Episode 8200	Average Score: 0.50
+Episode 8200	Average Score: 0.50
+
+Agent: agent-11, mean return: 0.50
+
+Agent: agent-2, mean return: 0.50
+Paired agent-5 with agent-6
+Episode 8200	Average Score: 0.48
+Episode 8200	Average Score: 0.47
+
+Agent: agent-5, mean return: 0.48
+
+Agent: agent-6, mean return: 0.47
+agent-0 performed worse than agent-3 but it wasn't significant, p = 0.57
+agent-1 performed worse than agent-4 but it wasn't significant, p = 0.11
+agent-2 performed worse than agent-0 but it wasn't significant, p = 0.86
+agent-5 performed worse than agent-9 but it wasn't significant, p = 0.25
+agent-6 performed worse than agent-11 but it wasn't significant, p = 0.72
+agent-7 performed worse than agent-4 but it wasn't significant, p = 0.13
+agent-11 performed worse than agent-12 but it wasn't significant, p = 0.47
+agent-13 performed worse than agent-4 but it wasn't significant, p = 0.14
+agent-15 performed worse than agent-12 but it wasn't significant, p = 0.89
+Paired agent-11 with agent-12
+Episode 8400	Average Score: 0.71
+Episode 8400	Average Score: 0.71
+
+Agent: agent-11, mean return: 0.71
+
+Agent: agent-12, mean return: 0.71
+Paired agent-6 with agent-13
+Episode 8400	Average Score: 0.48
+Episode 8400	Average Score: 0.47
+
+Agent: agent-6, mean return: 0.48
+
+Agent: agent-13, mean return: 0.47
+Paired agent-5 with agent-7
+Episode 8400	Average Score: 0.43
+Episode 8400	Average Score: 0.41
+
+Agent: agent-5, mean return: 0.43
+
+Agent: agent-7, mean return: 0.41
+Paired agent-0 with agent-14
+Episode 8400	Average Score: 0.39
+Episode 8400	Average Score: 0.40
+
+Agent: agent-0, mean return: 0.39
+
+Agent: agent-14, mean return: 0.40
+Paired agent-4 with agent-9
+Episode 8400	Average Score: 0.52
+Episode 8400	Average Score: 0.53
+
+Agent: agent-4, mean return: 0.52
+
+Agent: agent-9, mean return: 0.53
+Paired agent-1 with agent-8
+Episode 8400	Average Score: 0.54
+Episode 8400	Average Score: 0.53
+
+Agent: agent-1, mean return: 0.54
+
+Agent: agent-8, mean return: 0.53
+Paired agent-15 with agent-2
+Episode 8400	Average Score: 0.47
+Episode 8400	Average Score: 0.47
+
+Agent: agent-15, mean return: 0.47
+
+Agent: agent-2, mean return: 0.47
+Paired agent-3 with agent-10
+Episode 8400	Average Score: 0.43
+Episode 8400	Average Score: 0.44
+
+Agent: agent-3, mean return: 0.43
+
+Agent: agent-10, mean return: 0.44
+agent-0 performed worse than agent-10 but it wasn't significant, p = 0.40
+agent-2 performed worse than agent-4 but it wasn't significant, p = 0.44
+agent-3 performed worse than agent-2 but it wasn't significant, p = 0.50
+agent-5 performed worse than agent-9 but it wasn't significant, p = 0.08
+agent-7 performed worse than agent-3 but it wasn't significant, p = 0.72
+agent-10 performed worse than agent-8 but it wasn't significant, p = 0.13
+Overwriting agent-13 with agent-11, p = 0.00
+agent-14 performed worse than agent-10 but it wasn't significant, p = 0.46
+Paired agent-11 with agent-12
+Episode 8600	Average Score: 0.75
+Episode 8600	Average Score: 0.76
+
+Agent: agent-11, mean return: 0.75
+
+Agent: agent-12, mean return: 0.76
+Paired agent-13 with agent-2
+Episode 8600	Average Score: 0.55
+Episode 8600	Average Score: 0.55
+
+Agent: agent-13, mean return: 0.55
+
+Agent: agent-2, mean return: 0.55
+Paired agent-7 with agent-9
+Episode 8600	Average Score: 0.38
+Episode 8600	Average Score: 0.39
+
+Agent: agent-7, mean return: 0.38
+
+Agent: agent-9, mean return: 0.39
+Paired agent-1 with agent-8
+Episode 8600	Average Score: 0.61
+Episode 8600	Average Score: 0.60
+
+Agent: agent-1, mean return: 0.61
+
+Agent: agent-8, mean return: 0.60
+Paired agent-10 with agent-3
+Episode 8600	Average Score: 0.43
+Episode 8600	Average Score: 0.41
+
+Agent: agent-10, mean return: 0.43
+
+Agent: agent-3, mean return: 0.41
+Paired agent-15 with agent-14
+Episode 8600	Average Score: 0.55
+Episode 8600	Average Score: 0.54
+
+Agent: agent-15, mean return: 0.55
+
+Agent: agent-14, mean return: 0.54
+Paired agent-5 with agent-4
+Episode 8600	Average Score: 0.37
+Episode 8600	Average Score: 0.37
+
+Agent: agent-5, mean return: 0.37
+
+Agent: agent-4, mean return: 0.37
+Paired agent-0 with agent-6
+Episode 8600	Average Score: 0.34
+Episode 8600	Average Score: 0.33
+
+Agent: agent-0, mean return: 0.34
+
+Agent: agent-6, mean return: 0.33
+Overwriting agent-0 with agent-14, p = 0.00
+agent-6 performed worse than agent-7 but it wasn't significant, p = 0.41
+Overwriting agent-9 with agent-11, p = 0.00
+agent-13 performed worse than agent-8 but it wasn't significant, p = 0.47
+Paired agent-8 with agent-1
+Episode 8800	Average Score: 0.60
+Episode 8800	Average Score: 0.60
+
+Agent: agent-8, mean return: 0.60
+
+Agent: agent-1, mean return: 0.60
+Paired agent-6 with agent-5
+Episode 8800	Average Score: 0.46
+Episode 8800	Average Score: 0.46
+
+Agent: agent-6, mean return: 0.46
+
+Agent: agent-5, mean return: 0.46
+Paired agent-15 with agent-9
+Episode 8800	Average Score: 0.59
+Episode 8800	Average Score: 0.59
+
+Agent: agent-15, mean return: 0.59
+
+Agent: agent-9, mean return: 0.59
+Paired agent-2 with agent-3
+Episode 8800	Average Score: 0.45
+Episode 8800	Average Score: 0.44
+
+Agent: agent-2, mean return: 0.45
+
+Agent: agent-3, mean return: 0.44
+Paired agent-7 with agent-0
+Episode 8800	Average Score: 0.56
+Episode 8800	Average Score: 0.57
+
+Agent: agent-7, mean return: 0.56
+
+Agent: agent-0, mean return: 0.57
+Paired agent-4 with agent-11
+Episode 8800	Average Score: 0.60
+Episode 8800	Average Score: 0.59
+
+Agent: agent-4, mean return: 0.60
+
+Agent: agent-11, mean return: 0.59
+Paired agent-10 with agent-13
+Episode 8800	Average Score: 0.66
+Episode 8800	Average Score: 0.66
+
+Agent: agent-10, mean return: 0.66
+
+Agent: agent-13, mean return: 0.66
+Paired agent-14 with agent-12
+Episode 8800	Average Score: 0.54
+Episode 8800	Average Score: 0.55
+
+Agent: agent-14, mean return: 0.54
+
+Agent: agent-12, mean return: 0.55
+agent-2 performed worse than agent-5 but it wasn't significant, p = 0.86
+agent-3 performed worse than agent-14 but it wasn't significant, p = 0.13
+agent-5 performed worse than agent-9 but it wasn't significant, p = 0.05
+agent-6 performed worse than agent-5 but it wasn't significant, p = 0.93
+agent-7 performed worse than agent-1 but it wasn't significant, p = 0.59
+agent-9 performed worse than agent-11 but it wasn't significant, p = 0.98
+agent-12 performed worse than agent-10 but it wasn't significant, p = 0.10
+agent-14 performed worse than agent-0 but it wasn't significant, p = 0.72
+Paired agent-5 with agent-3
+Episode 9000	Average Score: 0.21
+Episode 9000	Average Score: 0.19
+
+Agent: agent-5, mean return: 0.21
+
+Agent: agent-3, mean return: 0.19
+Paired agent-12 with agent-4
+Episode 9000	Average Score: 0.52
+Episode 9000	Average Score: 0.51
+
+Agent: agent-12, mean return: 0.52
+
+Agent: agent-4, mean return: 0.51
+Paired agent-14 with agent-8
+Episode 9000	Average Score: 0.68
+Episode 9000	Average Score: 0.68
+
+Agent: agent-14, mean return: 0.68
+
+Agent: agent-8, mean return: 0.68
+Paired agent-1 with agent-9
+Episode 9000	Average Score: 0.34
+Episode 9000	Average Score: 0.32
+
+Agent: agent-1, mean return: 0.34
+
+Agent: agent-9, mean return: 0.32
+Paired agent-10 with agent-13
+Episode 9000	Average Score: 0.61
+Episode 9000	Average Score: 0.60
+
+Agent: agent-10, mean return: 0.61
+
+Agent: agent-13, mean return: 0.60
+Paired agent-15 with agent-7
+Episode 9000	Average Score: 0.58
+Episode 9000	Average Score: 0.58
+
+Agent: agent-15, mean return: 0.58
+
+Agent: agent-7, mean return: 0.58
+Paired agent-2 with agent-6
+Episode 9000	Average Score: 0.45
+Episode 9000	Average Score: 0.44
+
+Agent: agent-2, mean return: 0.45
+
+Agent: agent-6, mean return: 0.44
+Paired agent-11 with agent-0
+Episode 9000	Average Score: 0.70
+Episode 9000	Average Score: 0.72
+
+Agent: agent-11, mean return: 0.70
+
+Agent: agent-0, mean return: 0.72
+Overwriting agent-2 with agent-10, p = 0.01
+Overwriting agent-3 with agent-15, p = 0.00
+Overwriting agent-5 with agent-12, p = 0.00
+Overwriting agent-9 with agent-14, p = 0.00
+agent-11 performed worse than agent-0 but it wasn't significant, p = 0.88
+agent-12 performed worse than agent-13 but it wasn't significant, p = 0.23
+Paired agent-5 with agent-0
+Episode 9200	Average Score: 0.65
+Episode 9200	Average Score: 0.64
+
+Agent: agent-5, mean return: 0.65
+
+Agent: agent-0, mean return: 0.64
+Paired agent-3 with agent-15
+Episode 9200	Average Score: 0.39
+Episode 9200	Average Score: 0.39
+
+Agent: agent-3, mean return: 0.39
+
+Agent: agent-15, mean return: 0.39
+Paired agent-4 with agent-7
+Episode 9200	Average Score: 0.18
+Episode 9200	Average Score: 0.16
+
+Agent: agent-4, mean return: 0.18
+
+Agent: agent-7, mean return: 0.16
+Paired agent-6 with agent-2
+Episode 9200	Average Score: 0.58
+Episode 9200	Average Score: 0.56
+
+Agent: agent-6, mean return: 0.58
+
+Agent: agent-2, mean return: 0.56
+Paired agent-1 with agent-14
+Episode 9200	Average Score: 0.50
+Episode 9200	Average Score: 0.50
+
+Agent: agent-1, mean return: 0.50
+
+Agent: agent-14, mean return: 0.50
+Paired agent-8 with agent-13
+Episode 9200	Average Score: 0.60
+Episode 9200	Average Score: 0.60
+
+Agent: agent-8, mean return: 0.60
+
+Agent: agent-13, mean return: 0.60
+Paired agent-11 with agent-12
+Episode 9200	Average Score: 0.50
+Episode 9200	Average Score: 0.50
+
+Agent: agent-11, mean return: 0.50
+
+Agent: agent-12, mean return: 0.50
+Paired agent-9 with agent-10
+Episode 9200	Average Score: 0.60
+Episode 9200	Average Score: 0.60
+
+Agent: agent-9, mean return: 0.60
+
+Agent: agent-10, mean return: 0.60
+agent-1 performed worse than agent-13 but it wasn't significant, p = 0.15
+agent-2 performed worse than agent-13 but it wasn't significant, p = 0.59
+Overwriting agent-4 with agent-15, p = 0.00
+Overwriting agent-7 with agent-3, p = 0.00
+agent-14 performed worse than agent-2 but it wasn't significant, p = 0.35
+Overwriting agent-15 with agent-13, p = 0.00
+Paired agent-9 with agent-14
+Episode 9400	Average Score: 0.60
+Episode 9400	Average Score: 0.59
+
+Agent: agent-9, mean return: 0.60
+
+Agent: agent-14, mean return: 0.59
+Paired agent-13 with agent-10
+Episode 9400	Average Score: 0.61
+Episode 9400	Average Score: 0.60
+
+Agent: agent-13, mean return: 0.61
+
+Agent: agent-10, mean return: 0.60
+Paired agent-2 with agent-1
+Episode 9400	Average Score: 0.52
+Episode 9400	Average Score: 0.52
+
+Agent: agent-2, mean return: 0.52
+
+Agent: agent-1, mean return: 0.52
+Paired agent-3 with agent-0
+Episode 9400	Average Score: 0.59
+Episode 9400	Average Score: 0.59
+
+Agent: agent-3, mean return: 0.59
+
+Agent: agent-0, mean return: 0.59
+Paired agent-6 with agent-12
+Episode 9400	Average Score: 0.51
+Episode 9400	Average Score: 0.52
+
+Agent: agent-6, mean return: 0.51
+
+Agent: agent-12, mean return: 0.52
+Paired agent-4 with agent-7
+Episode 9400	Average Score: 0.57
+Episode 9400	Average Score: 0.56
+
+Agent: agent-4, mean return: 0.57
+
+Agent: agent-7, mean return: 0.56
+Paired agent-5 with agent-8
+Episode 9400	Average Score: 0.61
+Episode 9400	Average Score: 0.59
+
+Agent: agent-5, mean return: 0.61
+
+Agent: agent-8, mean return: 0.59
+Paired agent-15 with agent-11
+Episode 9400	Average Score: 0.50
+Episode 9400	Average Score: 0.50
+
+Agent: agent-15, mean return: 0.50
+
+Agent: agent-11, mean return: 0.50
+agent-0 performed worse than agent-3 but it wasn't significant, p = 0.92
+agent-1 performed worse than agent-0 but it wasn't significant, p = 0.34
+agent-2 performed worse than agent-9 but it wasn't significant, p = 0.24
+agent-11 performed worse than agent-5 but it wasn't significant, p = 0.08
+agent-12 performed worse than agent-4 but it wasn't significant, p = 0.39
+agent-15 performed worse than agent-9 but it wasn't significant, p = 0.13
+Paired agent-12 with agent-0
+Episode 9600	Average Score: 0.58
+Episode 9600	Average Score: 0.57
+
+Agent: agent-12, mean return: 0.58
+
+Agent: agent-0, mean return: 0.57
+Paired agent-14 with agent-15
+Episode 9600	Average Score: 0.47
+Episode 9600	Average Score: 0.47
+
+Agent: agent-14, mean return: 0.47
+
+Agent: agent-15, mean return: 0.47
+Paired agent-4 with agent-3
+Episode 9600	Average Score: 0.63
+Episode 9600	Average Score: 0.64
+
+Agent: agent-4, mean return: 0.63
+
+Agent: agent-3, mean return: 0.64
+Paired agent-1 with agent-10
+Episode 9600	Average Score: 0.43
+Episode 9600	Average Score: 0.43
+
+Agent: agent-1, mean return: 0.43
+
+Agent: agent-10, mean return: 0.43
+Paired agent-9 with agent-7
+Episode 9600	Average Score: 0.69
+Episode 9600	Average Score: 0.68
+
+Agent: agent-9, mean return: 0.69
+
+Agent: agent-7, mean return: 0.68
+Paired agent-6 with agent-2
+Episode 9600	Average Score: 0.50
+Episode 9600	Average Score: 0.50
+
+Agent: agent-6, mean return: 0.50
+
+Agent: agent-2, mean return: 0.50
+Paired agent-13 with agent-8
+Episode 9600	Average Score: 0.60
+Episode 9600	Average Score: 0.60
+
+Agent: agent-13, mean return: 0.60
+
+Agent: agent-8, mean return: 0.60
+Paired agent-5 with agent-11
+Episode 9600	Average Score: 0.57
+Episode 9600	Average Score: 0.55
+
+Agent: agent-5, mean return: 0.57
+
+Agent: agent-11, mean return: 0.55
+Overwriting agent-1 with agent-12, p = 0.02
+Overwriting agent-2 with agent-3, p = 0.04
+agent-3 performed worse than agent-9 but it wasn't significant, p = 0.51
+agent-5 performed worse than agent-0 but it wasn't significant, p = 0.92
+agent-7 performed worse than agent-9 but it wasn't significant, p = 0.96
+agent-8 performed worse than agent-3 but it wasn't significant, p = 0.59
+agent-10 performed worse than agent-14 but it wasn't significant, p = 0.46
+agent-11 performed worse than agent-12 but it wasn't significant, p = 0.72
+agent-15 performed worse than agent-0 but it wasn't significant, p = 0.12
+Paired agent-0 with agent-3
+Episode 9800	Average Score: 0.50
+Episode 9800	Average Score: 0.50
+
+Agent: agent-0, mean return: 0.50
+
+Agent: agent-3, mean return: 0.50
+Paired agent-9 with agent-14
+Episode 9800	Average Score: 0.47
+Episode 9800	Average Score: 0.45
+
+Agent: agent-9, mean return: 0.47
+
+Agent: agent-14, mean return: 0.45
+Paired agent-4 with agent-11
+Episode 9800	Average Score: 0.44
+Episode 9800	Average Score: 0.44
+
+Agent: agent-4, mean return: 0.44
+
+Agent: agent-11, mean return: 0.44
+Paired agent-2 with agent-8
+Episode 9800	Average Score: 0.35
+Episode 9800	Average Score: 0.37
+
+Agent: agent-2, mean return: 0.35
+
+Agent: agent-8, mean return: 0.37
+Paired agent-6 with agent-7
+Episode 9800	Average Score: 0.52
+Episode 9800	Average Score: 0.52
+
+Agent: agent-6, mean return: 0.52
+
+Agent: agent-7, mean return: 0.52
+Paired agent-15 with agent-13
+Episode 9800	Average Score: 0.36
+Episode 9800	Average Score: 0.35
+
+Agent: agent-15, mean return: 0.36
+
+Agent: agent-13, mean return: 0.35
+Paired agent-5 with agent-1
+Episode 9800	Average Score: 0.61
+Episode 9800	Average Score: 0.60
+
+Agent: agent-5, mean return: 0.61
+
+Agent: agent-1, mean return: 0.60
+Paired agent-12 with agent-10
+Episode 9800	Average Score: 0.50
+Episode 9800	Average Score: 0.49
+
+Agent: agent-12, mean return: 0.50
+
+Agent: agent-10, mean return: 0.49
+agent-3 performed worse than agent-7 but it wasn't significant, p = 0.76
+Overwriting agent-8 with agent-5, p = 0.00
+agent-10 performed worse than agent-12 but it wasn't significant, p = 0.83
+agent-11 performed worse than agent-12 but it wasn't significant, p = 0.31
+Overwriting agent-13 with agent-5, p = 0.00
+Overwriting agent-15 with agent-3, p = 0.01
+Paired agent-8 with agent-14
+Episode 10000	Average Score: 0.40
+Episode 10000	Average Score: 0.41
+
+Agent: agent-8, mean return: 0.40
+
+Agent: agent-14, mean return: 0.41
+Paired agent-5 with agent-3
+Episode 10000	Average Score: 0.40
+Episode 10000	Average Score: 0.39
+
+Agent: agent-5, mean return: 0.40
+
+Agent: agent-3, mean return: 0.39
+Paired agent-10 with agent-12
+Episode 10000	Average Score: 0.47
+Episode 10000	Average Score: 0.49
+
+Agent: agent-10, mean return: 0.47
+
+Agent: agent-12, mean return: 0.49
+Paired agent-6 with agent-11
+Episode 10000	Average Score: 0.37
+Episode 10000	Average Score: 0.38
+
+Agent: agent-6, mean return: 0.37
+
+Agent: agent-11, mean return: 0.38
+Paired agent-4 with agent-7
+Episode 10000	Average Score: 0.40
+Episode 10000	Average Score: 0.40
+
+Agent: agent-4, mean return: 0.40
+
+Agent: agent-7, mean return: 0.40
+Paired agent-2 with agent-15
+Episode 10000	Average Score: 0.29
+Episode 10000	Average Score: 0.31
+
+Agent: agent-2, mean return: 0.29
+
+Agent: agent-15, mean return: 0.31
+Paired agent-9 with agent-1
+Episode 10000	Average Score: 0.48
+Episode 10000	Average Score: 0.48
+
+Agent: agent-9, mean return: 0.48
+
+Agent: agent-1, mean return: 0.48
+Paired agent-0 with agent-13
+Episode 10000	Average Score: 0.35
+Episode 10000	Average Score: 0.35
+
+Agent: agent-0, mean return: 0.35
+
+Agent: agent-13, mean return: 0.35
+Overwriting agent-0 with agent-10, p = 0.04
+Overwriting agent-2 with agent-12, p = 0.00
+agent-5 performed worse than agent-1 but it wasn't significant, p = 0.19
+agent-8 performed worse than agent-10 but it wasn't significant, p = 0.26
+agent-11 performed worse than agent-3 but it wasn't significant, p = 0.85
+Overwriting agent-13 with agent-1, p = 0.03
+agent-15 performed worse than agent-4 but it wasn't significant, p = 0.10
