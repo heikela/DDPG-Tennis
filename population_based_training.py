@@ -9,6 +9,24 @@ def population_based_training(agents, env, brain_name,
                               episodes_between_exploit=20,
                               p_threshold = 0.05,
                               checkpoint_episodes = None):
+    """
+    Implement population based training of neural networks in the context of DDPG
+    
+    Params
+    ======
+        agents (list(DdpgAgent)): The population of agents to train
+        env (Unity Env): The environment to train the agent in
+        brain_name (string): The name of the brain to use when communicating to the unity env.
+        max_episode (int): Stop training after the agent has undergone this many episodes of trianing,
+            including any present in agent's history.
+        max_t (int): Maximum number of time steps to allow in each episode if the environment doesn't indicate
+            that the episode is done sooner than this.
+        episodes_between_exploit (int): conduct the exploit step (and potentially the explore step) every this many episodes
+        p_threshold (float): the threshold for the T-test p-value below which
+            the exploit step will overwrite one agent with antoher
+        checkpoint_episodes (int): after how many episodes we want to save a snapshot of the agent's state on disk.
+            If not given, defaults to episodes_between_exploit
+    """
     checkpoint_episodes = checkpoint_episodes if checkpoint_episodes else episodes_between_exploit
     episode_i = len(agents[0].history) + 1
     while episode_i <= max_episode:
