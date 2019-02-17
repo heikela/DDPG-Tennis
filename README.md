@@ -89,7 +89,7 @@ Python notebook Report.ipynb. To train the model from scratch,
 execute each code cell in the notebook in order.
 To evaluate a pre-trained model, create an agent and replace
 network weights with ones loaded from a checkpoint included
-in the repository. If you read the report outside of
+in the repository (`agent-3_episode_3000.pth` for the first agent to reach 0.5 return average or `agent-13_episode_5800.pth` for a later agent). If you read the report outside of
 an actual Jupyter environment, e.g. in the Github UI,
 some of the output from simulation runs is verbose - 
 inside Jupyter this becomes a scrollable area with
