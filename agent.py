@@ -97,7 +97,8 @@ class DdpgAgent():
                 'actor_lr': self.actor_lr,
                 'critic_lr': self.critic_lr,
                 'gamma': self.gamma,
-                'tau': self.tau}])
+                'tau': self.tau,
+                'noise_sigma': self.noise.state_dict['sigma']}])
             self.episode += 1
             self.episode_return = 0
         self.t_step += 1
@@ -192,17 +193,23 @@ class DdpgAgent():
             'actor_lr': self.actor_lr,
             'critic_lr': self.critic_lr,
             'gamma': self.gamma,
-            'tau': self.tau
+            'tau': self.tau,
+            'noise_sigma': self.noise.state_dict['sigma']
         }
     
     def load_hyperparameter_dict(self, hyperparameter_dict):
         """Set the hyperparameters for the training process for this actor"""
+        self.actor_lr = hyperparameter_dict['actor_lr']
         for p in self.actor_optimizer.param_groups:
             p['lr'] = hyperparameter_dict['actor_lr']
+        self.critic_lr = hyperparameter_dict['critic_lr']
         for p in self.critic_optimizer.param_groups:
             p['lr'] = hyperparameter_dict['critic_lr']
         self.gamma = hyperparameter_dict['gamma']
         self.tau = hyperparameter_dict['tau']
+        noise_state_dict = self.noise.state_dict()
+        noise_state_dict['sigma'] = hyperparameter_dict['noise_sigma']
+        self.noise.load_state_dict(noise_state_dict)
     
     def load_mutated_hyperparameter_dict(self, hyperparameter_dict):
         """Set the hyperparameters for the training process based on a mutated version of a previously saved parameter set"""
@@ -211,6 +218,7 @@ class DdpgAgent():
             'critic_lr': mutate_param(hyperparameter_dict['critic_lr']),
             'gamma': 1 - mutate_param(1 - hyperparameter_dict['gamma']),
             'tau': mutate_param(hyperparameter_dict['tau']),
+            'noise_sigma': mutate_param(hyperparameter_dict['noise_sigma'])
         })
     
     def full_save_dict(self):
