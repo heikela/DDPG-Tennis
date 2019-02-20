@@ -8,6 +8,7 @@ from ornstein_uhlenbeck_noise import *
 from replaybuffer import *
 from utils import soft_update, mutate_param
 import numpy as np
+import os
 
 class DdpgAgent():
     """An agent that interacts with the environment and does most of the work of the DDPG algorightm,
@@ -67,8 +68,8 @@ class DdpgAgent():
         self.t_step = 0
         self.action_space_limit = action_space_limit
         self.name = name
-        self.history = pandas.DataFrame(columns=['episode', 'return', 'actor_lr', 'critic_lr', 'tau', 'gamma'])
-        self.history.set_index('episode')
+        self.history = pandas.DataFrame(columns=['episode', 'return', 'actor_lr', 'critic_lr', 'tau', 'gamma', 'noise_sigma', 'opponent_name'])
+        self.history.set_index('episode', inplace=True)
         self.episode_return = 0
         self.episode = 1
     
@@ -86,19 +87,18 @@ class DdpgAgent():
                 action += self.noise.sample()
             return np.clip(action, -self.action_space_limit, self.action_space_limit)
     
-    def step(self, state, action, reward, next_state, done):
+    def step(self, state, action, reward, next_state, done, opponent_name=''):
         """Record experience and learn based on observed step"""
         self.experience.add(state, action, reward, next_state, done)
         self.episode_return += reward
         if done:
-            self.history = self.history.append([{
-                'episode': self.episode,
-                'return': self.episode_return,
-                'actor_lr': self.actor_lr,
-                'critic_lr': self.critic_lr,
-                'gamma': self.gamma,
-                'tau': self.tau,
-                'noise_sigma': self.noise.state_dict['sigma']}])
+            self.history.loc[self.episode, 'return'] = self.episode_return
+            self.history.loc[self.episode, 'actor_lr'] = self.actor_lr
+            self.history.loc[self.episode, 'critic_lr'] = self.critic_lr
+            self.history.loc[self.episode, 'gamma'] = self.gamma
+            self.history.loc[self.episode, 'tau'] = self.tau
+            self.history.loc[self.episode, 'noise_sigma'] = self.noise.state_dict()['sigma']
+            self.history.loc[self.episode, 'opponent_name'] = opponent_name
             self.episode += 1
             self.episode_return = 0
         self.t_step += 1
@@ -194,7 +194,7 @@ class DdpgAgent():
             'critic_lr': self.critic_lr,
             'gamma': self.gamma,
             'tau': self.tau,
-            'noise_sigma': self.noise.state_dict['sigma']
+            'noise_sigma': self.noise.state_dict()['sigma']
         }
     
     def load_hyperparameter_dict(self, hyperparameter_dict):
@@ -274,12 +274,14 @@ def ddpg(agent, env, brain_name,
                 break
         if i_episode % checkpoint_episodes == 0:
             print('\rEpisode {}\tAverage Score: {:.2f}'.format(i_episode, agent.get_running_mean_return(checkpoint_episodes)))
-            torch.save(agent.full_save_dict(),"{}_episode_{}.pth".format(agent.name, i_episode))
+            torch.save(agent.full_save_dict(),
+                       os.path.join(result_dir, "{}_episode_{}.pth".format(agent.name, i_episode)))
 
 
 def ddpg_collab(agents, env, brain_name,
-         max_episode=1000, max_t=1100,
-         checkpoint_episodes=100):
+         episodes=1000, max_t=1100,
+         checkpoint_episodes=100,
+         result_dir='.'):
     """Carry out learning based on the DDPG algorithm, for two agents collaborating.
 
     Params
@@ -292,7 +294,7 @@ def ddpg_collab(agents, env, brain_name,
         max_t (int): Maximum number of time steps to allow in each episode if the environment doesn't indicate
             that the episode is done sooner than this.
         checkpoint_episodes (int): after how many episodes we want to save a snapshot of the agent's state on disk"""
-    for i_episode in range(len(agents[0].history) + 1, max_episode + 1):
+    for i_episode in range(0, episodes):
         env_info = env.reset(train_mode=True)[brain_name] # reset the environment
         states = env_info.vector_observations
         for t in range(0, max_t):
@@ -302,11 +304,13 @@ def ddpg_collab(agents, env, brain_name,
             rewards = env_info.rewards
             done = np.any(env_info.local_done)
             for i in range(0, 2):
-                agents[i].step(states[i], actions[i], rewards[i], next_states[i], done)
+                agents[i].step(states[i], actions[i], rewards[i], next_states[i], done, agents[(i+1) % 2].name)
             states = next_states
             if done:
                 break
-        if i_episode % checkpoint_episodes == 0:
-            for i in range(0, 2):
-                print('\rEpisode {}\tAverage Score: {:.2f}'.format(i_episode, agents[i].get_running_mean_return(checkpoint_episodes)))
-                torch.save(agents[i].full_save_dict(),"{}_episode_{}.pth".format(agents[i].name, i_episode))
+        for i in range(0, 2):
+            episode = len(agents[i].history)
+            if episode % checkpoint_episodes == 0:
+                print('\r{}:\tEpisode {}\tAverage Score: {:.2f}'.format(agents[i].name, episode, agents[i].get_running_mean_return(checkpoint_episodes)))
+                torch.save(agents[i].full_save_dict(),
+                           os.path.join(result_dir, "{}_episode_{}.pth".format(agents[i].name, episode)))
